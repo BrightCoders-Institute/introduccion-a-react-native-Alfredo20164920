@@ -7,13 +7,15 @@
 
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import LoginForm from './components/LoginForm';
+import Saludar from './components/Saludar';
 
 function App(): JSX.Element {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Hola mundo</Text>
-      <LoginForm />
+      <Saludar firstName="Alfredo Paz" />
+      <Saludar firstName="John Doe" />
+      <Saludar />
     </View>
   );
 }
